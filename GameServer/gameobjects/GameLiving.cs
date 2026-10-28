@@ -32,6 +32,8 @@ namespace DOL.GS
 
 		public ConcurrentDictionary<eSpellType, Spell> ActivePulseSpells { get; } = new();
 
+		public virtual bool IsBot => false;
+
 		#region Combat
 
 		private bool _isBeingHandledByReaperService;
