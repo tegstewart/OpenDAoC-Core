@@ -247,6 +247,12 @@ namespace DOL.GS
 			get { return Environment.TickCount - m_startTick; }
 		}
 
+		/// <summary>Are GamePlayer based bots present on this server?</summary>
+		public static bool ArePlayerBotsPresent { get; set; } = false;
+
+        /// <summary>Are GameNPC based bots present on this server?</summary>
+        public static bool AreNpcBotsPresent { get; set; } = false;
+
 		#endregion
 
 		#region Initialization
