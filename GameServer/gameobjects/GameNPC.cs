@@ -1916,6 +1916,9 @@ namespace DOL.GS
 			if (!base.AddToWorld())
 				return false;
 
+			if (IsBot)
+				GameServer.AreNpcBotsPresent = true;
+
 			if (MAX_PASSENGERS > 0)
 				Riders = new GamePlayer[MAX_PASSENGERS];
 
