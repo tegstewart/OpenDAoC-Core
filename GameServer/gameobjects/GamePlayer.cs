@@ -7758,6 +7758,9 @@ namespace DOL.GS
                 return false;
             }
 
+            if (IsBot)
+                GameServer.ArePlayerBotsPresent = true;
+
             RefreshCachedHealthPercentGroupWindow();
             movementComponent.ForceUpdatePosition();
             m_invulnerabilityTick = 0;
